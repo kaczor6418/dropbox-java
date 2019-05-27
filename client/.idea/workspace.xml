@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="459229a8-4194-4c1a-af3f-4cdd688655e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../server/serverDatabase/userFiveDir/discData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/k/kaczynski/FileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/k/kaczynski/UserInputValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/k/kaczynski/StringToMapConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/k/kaczynski/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/k/kaczynski/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/k/kaczynski/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/k/kaczynski/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/ServerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userFiveDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userFiveDisc/discData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userFourDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userFourDisc/discData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userOneDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userOneDisc/discData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userThreeDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userThreeDisc/discData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userTwoDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userTwoDisc/discData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/k/kaczynski/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/k/kaczynski/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/k/kaczynski/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/k/kaczynski/ServerThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +28,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/k/kaczynski/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="143">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileWatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,6 +80,14 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -45,22 +107,39 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/k/kaczynski/UserDataValidator.java" />
+        <option value="$PROJECT_DIR$/usersDiscs/userFiveDisc/ascasca.txt" />
+        <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/jabacPsy.txt" />
+        <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/ascasca.txt" />
+        <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/ascac" />
+        <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/test.txt" />
         <option value="$PROJECT_DIR$/src/k/kaczynski/Main.java" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/UserInputValidator.java" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/DataToSend.java" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/FileData.java" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/FileInformation.java" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/FileWatcher.java" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/FileHandler.java" />
+        <option value="$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt" />
+        <option value="$PROJECT_DIR$/usersDiscs/userTwoDisc/test2.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
     <option name="y" value="-1" />
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -80,18 +159,36 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="kaczynski" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="usersDiscs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="usersDiscs" type="462c0819:PsiDirectoryNode" />
+              <item name="userTwoDisc" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556916451843" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559000399465" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="k.kaczynski" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/usersDiscs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -109,7 +206,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="k.kaczynski.Main" />
       <module name="client" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="userTwo usersDiscs//" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -135,17 +232,57 @@
       <workItem from="1556376181839" duration="316000" />
       <workItem from="1556383881189" duration="2057000" />
       <workItem from="1556914513580" duration="1779000" />
+      <workItem from="1556972112213" duration="2427000" />
+      <workItem from="1557045133912" duration="9683000" />
+      <workItem from="1557261699721" duration="4603000" />
+      <workItem from="1557773533409" duration="48000" />
+      <workItem from="1558796653585" duration="8730000" />
+      <workItem from="1558820968144" duration="3451000" />
+      <workItem from="1558865442142" duration="4088000" />
+      <workItem from="1558892598391" duration="3083000" />
+      <workItem from="1558985172856" duration="6967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4157000" />
+    <option name="totallyTimeSpent" value="47237000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-1" width="1680" height="1050" extended-state="6" />
+    <frame x="1920" y="-1" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2986536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33191034" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32740587" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3094984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -174,19 +311,80 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/Main.java">
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userFiveDisc/discData.txt" />
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/UserDataValidator.java" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userFiveDisc/ascasca.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/jabacPsy.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/ascasca.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/ascac" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/ascas" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/ascascsa.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/test.txt" />
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/UserInputValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test.2" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/tests.txt" />
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/DataToSend.java" />
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/nio/file/StandardWatchEventKinds.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileInformation.java" />
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
