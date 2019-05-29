@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class FileHandler {
 
@@ -17,48 +18,61 @@ public class FileHandler {
     private String filePath;
     private ArrayList<String> dataInfo;
 
+    private final String SERVER_DISC_PATH = "serverDisc//";
+    private final String[] SERVER_DISCS = {"userOneDisc/", "userTwoDisc/", "userThreeDisc/", "userFourDisc/", "userFiveDisc/"};
+
     public FileHandler(String filePath, ArrayList<String> dataInfo, String userName) {
         this.filePath = filePath;
         this.dataInfo = dataInfo;
         this.userName = userName;
-        this.userDiscPath = "serverDisc//" + userName + "Disc/";
+        this.userDiscPath = SERVER_DISC_PATH + userName + "Disc/";
         this.userDataDiscPath = this.userDiscPath + "discData.txt";
     }
 
     public FileHandler(String userName) {
-        this.userDiscPath = "serverDisc//" + userName + "Disc/";
-        this.userDataDiscPath = this.userDiscPath + "discData.txt";
+        this.userName = userName;
     }
 
     public void saveChanges() {
         String operationType = "";
         switch (dataInfo.get(0)) {
             case "ENTRY_CREATE":
-                this.createFile(filePath);
+                createFile(filePath);
                 operationType = "ENTRY_CREATE";
                 break;
             case "ENTRY_DELETE":
                 operationType = "ENTRY_DELETE";
-                this.deleteFile(filePath);
+                deleteFile(filePath);
                 break;
             default:
-                this.modifyFile(filePath, dataInfo);
+                modifyFile(filePath, dataInfo);
         }
         this.updateUserDiscData(operationType);
     }
 
     public HashMap<String , ArrayList<String>> getAllUserFilesWithData() {
-        FileLoader discInfo = new FileLoader(userDataDiscPath);
-        ArrayList<String> allUserFiles = discInfo.loadFileData();
-        allUserFiles.remove(0);
-        int usersFilesCount = allUserFiles.size();
+        HashMap<String , String> specifiedUserFileList = new HashMap<>();
+        for (String discName : SERVER_DISCS) {
+            String discInfoFilePath = SERVER_DISC_PATH + discName;
+            FileLoader discInfo = new FileLoader(discInfoFilePath + "discData.txt");
+            ArrayList<String> allUserFiles = discInfo.loadFileData();
+            for (String ownerAnfFile : allUserFiles) {
+                String[] userNameFileName = ownerAnfFile.split(": ");
+                if (userNameFileName[0].equals(userName)) {
+                    specifiedUserFileList.put(discInfoFilePath, userNameFileName[1]);
+                }
+            }
+        }
+        int usersFilesCount = specifiedUserFileList.size();
         FileLoader[] filesRunners = new FileLoader[usersFilesCount];
         Thread[] filesThreads = new Thread[usersFilesCount];
-        for (int i = 0; i < usersFilesCount; i ++) {
-            String userFilePath = userDiscPath + allUserFiles.get(i);
-            filesRunners[i] = new FileLoader(userFilePath);
-            filesThreads[i] = new Thread(filesRunners[i]);
-            filesThreads[i].start();
+        int idx = 0;
+        for (Map.Entry<String, String> file: specifiedUserFileList.entrySet()) {
+            String userFilePath = file.getKey() + file.getValue();
+            filesRunners[idx] = new FileLoader(userFilePath);
+            filesThreads[idx] = new Thread(filesRunners[idx]);
+            filesThreads[idx].start();
+            idx++;
         }
         for (Thread fileThread : filesThreads) {
             try {
@@ -68,8 +82,9 @@ public class FileHandler {
             }
         }
         HashMap<String , ArrayList<String>> userFiles = new HashMap<>();
-        for (int i = 0; i < usersFilesCount; i ++) {
-            userFiles.put(allUserFiles.get(i), filesRunners[i].fileData);
+        idx = 0;
+        for (String fileName : specifiedUserFileList.values()) {
+            userFiles.put(fileName, filesRunners[idx].fileData);
         }
         return userFiles;
     }
@@ -116,11 +131,11 @@ public class FileHandler {
             FileLoader fileLoader =  new FileLoader(userDataDiscPath);
             ArrayList<String> discData = fileLoader.loadFileData();
             String[] pathElements = filePath.split("/");
-            String fileName = pathElements[pathElements.length - 1];
+            String ownerAndFileName = userName + ": " + pathElements[pathElements.length - 1];
             if (operationType.equals("ENTRY_CREATE")) {
-                discData.add(fileName);
+                discData.add(ownerAndFileName);
             } else {
-                discData.remove(fileName);
+                discData.remove(ownerAndFileName);
             }
             this.deleteFile(userDataDiscPath);
             this.createFile(userDataDiscPath);

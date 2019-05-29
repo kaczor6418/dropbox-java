@@ -30,9 +30,8 @@ public class ServerThread extends Thread {
             clientMessage = bufferedReader.readLine();
             userName = clientMessage;
             String userDiscPath = "serverDisc//" + userName + "Disc/";
-            FileHandler sendDataToUser = new FileHandler(userName);
-            System.out.println(sendDataToUser.getAllUserFilesWithData());
             System.out.println(String.format("User: %s is connected", userName));
+            this.sendInitializeDataToClient();
             while(true) {
                 if (!clientMessage.equals(userName)) {
                     HashMap<String, ArrayList<String>> fileData = new HashMap<>(StringToMapConverter.convert(clientMessage));
@@ -69,5 +68,17 @@ public class ServerThread extends Thread {
                 System.out.println("Socket Close Error");
             }
         }
+    }
+
+    private void sendInitializeDataToClient () {
+        System.out.println(String.format("%s: Is synchronizing with server", userName));
+        FileHandler initializeData = new FileHandler(userName);
+        HashMap<String , ArrayList<String>> userServerDisc = initializeData.getAllUserFilesWithData();
+        if (userServerDisc.size() > 0) {
+            outputStream.println(userServerDisc);
+        } else {
+            outputStream.println("Nothing to initialize");
+        }
+        System.out.println(String.format("%s: Initialized data has been send to user. User is synchronized with server", userName));
     }
 }

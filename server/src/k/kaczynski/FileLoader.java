@@ -15,10 +15,6 @@ public class FileLoader implements Runnable {
         this.filePath = filePath;
     }
 
-    @Override public void run() {
-        fileData = this.loadFileData();
-    }
-
     public ArrayList<String> loadFileData() {
         ArrayList<String> userDiscData = new ArrayList<>();
         File file = new File(filePath);
@@ -31,5 +27,9 @@ public class FileLoader implements Runnable {
             e.printStackTrace();
         }
         return userDiscData;
+    }
+
+    @Override public void run() {
+        fileData = this.loadFileData();
     }
 }

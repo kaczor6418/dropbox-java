@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="459229a8-4194-4c1a-af3f-4cdd688655e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/k/kaczynski/FileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/k/kaczynski/UserInputValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/k/kaczynski/StringToMapConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/k/kaczynski/FileHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/k/kaczynski/FileHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/client/k/kaczynski/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/k/kaczynski/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/k/kaczynski/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/k/kaczynski/FileHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/k/kaczynski/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/k/kaczynski/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usersDiscs/userTwoDisc/test2.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/FileHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/FileHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/FileLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/FileLoader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/k/kaczynski/ServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userFiveDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userFiveDisc/discData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userFourDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userFourDisc/discData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userOneDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userOneDisc/discData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userThreeDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userThreeDisc/discData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/serverDatabase/userTwoDir/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userTwoDisc/discData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/k/kaczynski/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/k/kaczynski/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDisc/userOneDisc/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userOneDisc/discData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDisc/userTwoDisc/discData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/serverDisc/userTwoDisc/discData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDisc/userTwoDisc/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/serverDisc/userTwoDisc/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/k/kaczynski/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/k/kaczynski/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/k/kaczynski/FileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/k/kaczynski/FileLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/k/kaczynski/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/k/kaczynski/ServerThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/k/kaczynski/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="20">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,19 +43,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt">
+        <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/janek.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/test.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test2.txt">
+        <entry file="file://$PROJECT_DIR$/src/k/kaczynski/StringToMapConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="330">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#StringToMapConverter#0;class#StringToMapConverter#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileWatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="230">
               <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
             </state>
           </provider>
@@ -70,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="720">
+              <caret line="50" column="18" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,11 +105,15 @@
       <find>s1</find>
       <find>br</find>
       <find>socekt</find>
+      <find>FileLoader</find>
+      <find>fileData</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
       <replace>userBufferStream</replace>
       <replace>socket</replace>
+      <replace>FileHandler</replace>
+      <replace>initData</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -112,24 +127,30 @@
         <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/jabacPsy.txt" />
         <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/ascasca.txt" />
         <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/ascac" />
-        <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/test.txt" />
-        <option value="$PROJECT_DIR$/src/k/kaczynski/Main.java" />
         <option value="$PROJECT_DIR$/src/k/kaczynski/UserInputValidator.java" />
         <option value="$PROJECT_DIR$/src/k/kaczynski/DataToSend.java" />
         <option value="$PROJECT_DIR$/src/k/kaczynski/FileData.java" />
         <option value="$PROJECT_DIR$/src/k/kaczynski/FileInformation.java" />
         <option value="$PROJECT_DIR$/src/k/kaczynski/FileWatcher.java" />
-        <option value="$PROJECT_DIR$/src/k/kaczynski/FileHandler.java" />
-        <option value="$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt" />
         <option value="$PROJECT_DIR$/usersDiscs/userTwoDisc/test2.txt" />
+        <option value="$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/Main.java" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/FileHandler.java" />
+        <option value="$PROJECT_DIR$/usersDiscs/userOneDisc/test.txt" />
+        <option value="$PROJECT_DIR$/src/k/kaczynski/StringToMapConverter.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="y" value="-1" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="1862" />
+    <option name="width" value="1910" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -164,12 +185,6 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="usersDiscs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="usersDiscs" type="462c0819:PsiDirectoryNode" />
-              <item name="userTwoDisc" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -179,8 +194,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559000399465" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559149535570" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../server" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -202,8 +221,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.userTwo">
+    <configuration name="userOne" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="k.kaczynski.Main" />
+      <module name="client" />
+      <option name="PROGRAM_PARAMETERS" value="userOne usersDiscs//" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="userTwo" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="k.kaczynski.Main" />
       <module name="client" />
       <option name="PROGRAM_PARAMETERS" value="userTwo usersDiscs//" />
@@ -213,11 +240,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="Main" type="Application" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sameCLientx2" type="CompoundRunConfigurationType">
+      <toRun name="Main" type="Application" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.userTwo" />
+      <item itemvalue="Application.userOne" />
+      <item itemvalue="Compound.sameCLientx2" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -240,18 +275,22 @@
       <workItem from="1558820968144" duration="3451000" />
       <workItem from="1558865442142" duration="4088000" />
       <workItem from="1558892598391" duration="3083000" />
-      <workItem from="1558985172856" duration="6967000" />
+      <workItem from="1558985172856" duration="7324000" />
+      <workItem from="1559025540407" duration="4458000" />
+      <workItem from="1559053836309" duration="4428000" />
+      <workItem from="1559074959940" duration="2514000" />
+      <workItem from="1559125431654" duration="5453000" />
+      <workItem from="1559145811278" duration="3611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47237000" />
+    <option name="totallyTimeSpent" value="68058000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-1" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33191034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35058698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -260,7 +299,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32740587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32723358" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -270,13 +309,13 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32938644" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32977587" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -325,7 +364,6 @@
     <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/ascac" />
     <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/ascas" />
     <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/ascascsa.txt" />
-    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/test.txt" />
     <entry file="file://$PROJECT_DIR$/src/k/kaczynski/UserInputValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -347,46 +385,137 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileInformation.java" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/janek.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/jnausz.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/asca.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test2.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/userOne: test.txt" />
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/null">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usersDiscs/userOneDisc/janek.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileWatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="230">
           <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/k/kaczynski/FileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="720">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/k/kaczynski/StringToMapConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="330">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#StringToMapConverter#0;class#StringToMapConverter#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usersDiscs/userTwoDisc/test2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>client</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
