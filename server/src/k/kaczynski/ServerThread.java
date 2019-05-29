@@ -12,9 +12,13 @@ public class ServerThread extends Thread {
     private PrintWriter outputStream = null;
     private Socket socket;
     private String userName;
+    private String assignedDisc;
+    private Object synchronizingObject;
 
-    ServerThread(Socket socket){
+    ServerThread(Socket socket, String assignedDisc, Object synchronizingObject){
         this.socket = socket;
+        this.assignedDisc = assignedDisc;
+        this.synchronizingObject = synchronizingObject;
     }
 
     public void run() {
@@ -29,15 +33,14 @@ public class ServerThread extends Thread {
         try {
             clientMessage = bufferedReader.readLine();
             userName = clientMessage;
-            String userDiscPath = "serverDisc//" + userName + "Disc/";
-            System.out.println(String.format("User: %s is connected", userName));
+            String userDiscPath = "serverDisc//" + assignedDisc;
+            System.out.println(String.format("Server: %s is connected", userName));
             this.sendInitializeDataToClient();
             while(true) {
                 if (!clientMessage.equals(userName)) {
                     HashMap<String, ArrayList<String>> fileData = new HashMap<>(StringToMapConverter.convert(clientMessage));
                     for (Map.Entry<String, ArrayList<String>> file : fileData.entrySet()) {
-                        String changedFilePath = userDiscPath + file.getKey();
-                        FileHandler fileHandler = new FileHandler(changedFilePath, file.getValue(), userName);
+                        FileHandler fileHandler = new FileHandler(userDiscPath, file.getKey(), file.getValue(), userName, synchronizingObject);
                         fileHandler.saveChanges();
                     }
                 }
@@ -79,6 +82,6 @@ public class ServerThread extends Thread {
         } else {
             outputStream.println("Nothing to initialize");
         }
-        System.out.println(String.format("%s: Initialized data has been send to user. User is synchronized with server", userName));
+        System.out.println(String.format("Server: Initialized data has been send to %s. User is synchronized with server", userName));
     }
 }

@@ -9,24 +9,27 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class FileHandler {
 
-    private String userDiscPath;
     private String userDataDiscPath;
     private String userName;
-    private String filePath;
+    private String userAssignedDiscPath;
+    private String fileName;
+    private Object synchronizingObject;
     private ArrayList<String> dataInfo;
 
     private final String SERVER_DISC_PATH = "serverDisc//";
-    private final String[] SERVER_DISCS = {"userOneDisc/", "userTwoDisc/", "userThreeDisc/", "userFourDisc/", "userFiveDisc/"};
+    private static final String[] SERVER_DISCS = {"discOne/", "discTwo/", "discThree/", "discFour/", "discFive/"};
 
-    public FileHandler(String filePath, ArrayList<String> dataInfo, String userName) {
-        this.filePath = filePath;
+    public FileHandler(String userAssignedDiscPath, String fileName, ArrayList<String> dataInfo, String userName, Object synchronizingObject) {
+        this.fileName = fileName;
+        this.userAssignedDiscPath = userAssignedDiscPath + "/" + this.fileName;
         this.dataInfo = dataInfo;
         this.userName = userName;
-        this.userDiscPath = SERVER_DISC_PATH + userName + "Disc/";
-        this.userDataDiscPath = this.userDiscPath + "discData.txt";
+        this.userDataDiscPath = userAssignedDiscPath + "discData.txt";
+        this.synchronizingObject = synchronizingObject;
     }
 
     public FileHandler(String userName) {
@@ -37,15 +40,15 @@ public class FileHandler {
         String operationType = "";
         switch (dataInfo.get(0)) {
             case "ENTRY_CREATE":
-                createFile(filePath);
+                createFile(userAssignedDiscPath);
                 operationType = "ENTRY_CREATE";
                 break;
             case "ENTRY_DELETE":
                 operationType = "ENTRY_DELETE";
-                deleteFile(filePath);
+                deleteFile(userAssignedDiscPath);
                 break;
             default:
-                modifyFile(filePath, dataInfo);
+                modifyFile(userAssignedDiscPath, dataInfo);
         }
         this.updateUserDiscData(operationType);
     }
@@ -128,18 +131,24 @@ public class FileHandler {
 
     private void updateUserDiscData(String operationType) {
         if (!operationType.equals("")) {
-            FileLoader fileLoader =  new FileLoader(userDataDiscPath);
-            ArrayList<String> discData = fileLoader.loadFileData();
-            String[] pathElements = filePath.split("/");
-            String ownerAndFileName = userName + ": " + pathElements[pathElements.length - 1];
-            if (operationType.equals("ENTRY_CREATE")) {
-                discData.add(ownerAndFileName);
-            } else {
-                discData.remove(ownerAndFileName);
+            synchronized (synchronizingObject) {
+                try {
+                    TimeUnit.SECONDS.sleep(10);
+                } catch (InterruptedException exception) {
+                    System.out.println (exception.toString());
+                }
+                FileLoader fileLoader = new FileLoader(userDataDiscPath);
+                ArrayList<String> discData = fileLoader.loadFileData();
+                String ownerAndFileName = userName + ": " + fileName;
+                if (operationType.equals("ENTRY_CREATE")) {
+                    discData.add(ownerAndFileName);
+                } else {
+                    discData.remove(ownerAndFileName);
+                }
+                this.deleteFile(userDataDiscPath);
+                this.createFile(userDataDiscPath);
+                this.modifyFile(userDataDiscPath, discData);
             }
-            this.deleteFile(userDataDiscPath);
-            this.createFile(userDataDiscPath);
-            this.modifyFile(userDataDiscPath, discData);
         }
     }
 
